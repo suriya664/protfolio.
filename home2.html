@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home 2 - AlexMorgan</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+    <meta name="theme-color" content="#6366f1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">AlexMorgan</a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="home2.html" class="nav-link active">Home 2</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="login.html" class="nav-btn">Login</a></li>
+                    <li><a href="register.html" class="nav-btn btn-primary">Register</a></li>
+                    <li><button onclick="toggleTheme()" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                        <span>Theme</span>
+                    </button></li>
+                </ul>
+                <div class="navbar-actions">
+                    <button onclick="toggleTheme()" class="theme-toggle" id="themeToggleDesktop">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Alternative -->
+    <section class="hero hero-alt">
+        <div class="container">
+            <div class="hero-content hero-content-alt">
+                <div class="hero-image">
+                    <img src="assets/profile-hero-2.jpg" alt="AlexMorgan - Frontend Developer">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Hello, I'm <span class="highlight">AlexMorgan</span></h1>
+                    <h2 class="hero-subtitle">Creative Frontend Developer & UI/UX Designer</h2>
+                    <p class="hero-description">Passionate about crafting digital experiences that are both beautiful and functional. I transform ideas into reality through code and design.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+                        <a href="projects.html" class="btn btn-secondary">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="services services-home2">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/service-webdev.jpg" alt="Web Development">
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>I build responsive, fast, and scalable websites using the latest technologies and best practices to ensure optimal performance and user experience.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/service-uiux.jpg" alt="UI/UX Design">
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>I create intuitive and visually appealing user interfaces that enhance user engagement and provide seamless navigation experiences.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/service-seo.jpg" alt="SEO Optimization">
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>I optimize websites to improve search engine rankings, increase organic traffic, and enhance online visibility for better business growth.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project-1.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="project-detail.html?project=1" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p class="project-category">Web Development</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project-2.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="project-detail.html?project=2" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App Design</h3>
+                        <p class="project-category">UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?w=800&auto=format&fit=crop" alt="Dashboard Interface">
+                        <div class="project-overlay">
+                            <a href="project-detail.html?project=3" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Interface</h3>
+                        <p class="project-category">Web Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's work together to bring your vision to life</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>I'm a passionate Frontend Developer and Designer dedicated to creating beautiful and functional web experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="about.html">About</a></li>
+                         
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:yourname@email.com">yourname@email.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, USA</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="footer-social">
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AlexMorgan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
